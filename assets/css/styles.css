@@ -132,10 +132,10 @@ nav {
 
 .logo {
     font-family: var(--heading-font);
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--primary-blue);
-    line-height: 1.2;
+    font-size: 4rem;
+    font-weight: bolder;
+    line-height: 0.8;
+    letter-spacing: -3.4px;
     text-align: left;
     transition: var(--transition-smooth);
 }
@@ -146,6 +146,7 @@ nav {
 
 .logo .company-name {
     display: block;
+    font-weight: bold;
 }
 
 .nav-links {
