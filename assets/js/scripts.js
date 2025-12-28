@@ -104,50 +104,32 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // === FORM VALIDATION ===
     const contactForm = document.getElementById('contactForm');
-    
+
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form values
-            const name = document.getElementById('name').value.trim();
             const email = document.getElementById('email').value.trim();
+            const name = document.getElementById('name').value.trim();
             const phone = document.getElementById('phone').value.trim();
-            const eventDate = document.getElementById('eventDate').value;
-            const eventType = document.getElementById('eventType').value;
-            const location = document.getElementById('location').value.trim();
-            const message = document.getElementById('message').value.trim();
-            
-            // Basic validation
+
             if (!name || !email || !phone) {
+                e.preventDefault();
                 alert('Please fill in all required fields (Name, Email, Phone)');
-                return;
+                return false;
             }
-            
-            // Email validation
+
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailRegex.test(email)) {
+                e.preventDefault();
                 alert('Please enter a valid email address');
-                return;
+                return false;
             }
-            
-            // Phone validation (basic)
+
             const phoneRegex = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
-            if (!phoneRegex.test(phone)) {
+            if (!phoneRegex.test(phone.replace(/\D/g, ''))) {
+                e.preventDefault();
                 alert('Please enter a valid 10-digit phone number');
-                return;
+                return false;
             }
-            
-            // If validation passes, you would normally send the form data here
-            // For now, we'll just show a success message
-            alert('Thank you for your inquiry! We will contact you within 2 hours.');
-            
-            // Reset form
-            contactForm.reset();
-            
-            // In production, you would send this to your server:
-            // const formData = { name, email, phone, eventDate, eventType, location, message };
-            // fetch('/api/contact', { method: 'POST', body: JSON.stringify(formData) })
         });
     }
     
