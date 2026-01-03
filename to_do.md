@@ -9,12 +9,12 @@
 - [ ] Save to: `assets/images/og-image.jpg`
 
 ### 2. Create Favicon Files
-- [ ] Go to [favicon.io](https://favicon.io) or [realfavicongenerator.net](https://realfavicongenerator.net)
-- [ ] Upload your logo or create a simple icon
-- [ ] Download the generated files and save to `assets/images/`:
-  - [ ] `favicon-32x32.png`
-  - [ ] `favicon-16x16.png`
-  - [ ] `apple-touch-icon.png` (180x180px)
+- [x] Go to [favicon.io](https://favicon.io) or [realfavicongenerator.net](https://realfavicongenerator.net)
+- [x] Upload your logo or create a simple icon
+- [x] Download the generated files and save to `assets/images/`:
+  - [x] `favicon-32x32.png`
+  - [x] `favicon-16x16.png`
+  - [x] `apple-touch-icon.png` (180x180px)
 
 ### 3. Submit Sitemap to Google
 - [ ] Go to [Google Search Console](https://search.google.com/search-console)
@@ -42,6 +42,33 @@
 - [ ] Replace placeholder gradient boxes with real event photos
 - [ ] Keep images under 500KB and max 1200px wide
 - [ ] Update alt text to describe each specific photo
+
+---
+
+## Competitive SEO Improvements
+
+### Quick Wins (High Impact, Low Effort)
+- [x] Update meta descriptions to include "$500/4hrs" pricing
+- [x] Add "Long Island" to keyword targeting across site
+- [ ] Add review/testimonial schema when you collect Google reviews
+
+### Medium-Term (Location Landing Pages)
+- [ ] Create `/photo-booth-rental-queens.html` - Target Queens specifically
+- [ ] Create `/photo-booth-rental-nassau-county.html` - Your unique territory
+- [ ] Create `/photo-booth-rental-suffolk-county.html` - Your unique territory
+- [ ] Create `/wedding-photo-booth-nyc.html` - High-value keyword
+
+### Long-Term Growth
+- [ ] Build Google reviews (aim for 50+ reviews)
+- [ ] Add a blog section for content marketing
+- [ ] Consider adding 360 booth or additional services
+- [ ] Create event-type pages (corporate, birthday, sweet 16)
+
+### Competitive Advantages to Emphasize
+- **DSLR vs iPad** - No major competitor emphasizes this
+- **Nassau/Suffolk coverage** - Underserved market by NYC competitors
+- **$500/4hrs pricing** - Competitive with Magic Smiles, undercuts Luxe/Showtime
+- **Owner-operated** - Matches Showtime's "no subcontracting" messaging
 
 ---
 
