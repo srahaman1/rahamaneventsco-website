@@ -6,14 +6,60 @@
     <meta name="description" content="Learn about Rahaman Events Co. - family-owned event rental business serving NYC Metro with professional photo booths and quality equipment.">
     <meta name="keywords" content="about Rahaman Events, family owned event rental, professional photo booth owner, NYC event rental company">
     <title>About Us | Rahaman Events Co.</title>
-    
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://rahamaneventsco.com/about.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rahamaneventsco.com/about.html">
+    <meta property="og:title" content="About Us | Rahaman Events Co.">
+    <meta property="og:description" content="Family-owned, owner-operated event rentals in NYC Metro. Professional DSLR photo booths with $1M insurance. Quality you can trust.">
+    <meta property="og:image" content="https://rahamaneventsco.com/assets/images/og-image.jpg">
+    <meta property="og:site_name" content="Rahaman Events Co.">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About Us | Rahaman Events Co.">
+    <meta name="twitter:description" content="Family-owned, owner-operated event rentals in NYC Metro. Professional quality you can trust.">
+    <meta name="twitter:image" content="https://rahamaneventsco.com/assets/images/og-image.jpg">
+
+    <!-- Additional SEO -->
+    <meta name="robots" content="index, follow">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Lora:wght@400;600&display=swap" rel="stylesheet">
-    
+
     <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+
+    <!-- Structured Data - About Page -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "mainEntity": {
+            "@type": "LocalBusiness",
+            "@id": "https://rahamaneventsco.com/#business",
+            "name": "Rahaman Events Co.",
+            "description": "Family-owned, owner-operated event rental business serving NYC Metro with professional DSLR photo booths and quality equipment.",
+            "foundingLocation": "Queens, NY",
+            "slogan": "Family-first quality. Owner-operated service. Professional results.",
+            "hasCredential": {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Insurance",
+                "name": "$1 Million General Liability Insurance"
+            }
+        }
+    }
+    </script>
 </head>
 <body>
     <!-- HEADER / NAVIGATION -->
@@ -129,30 +175,35 @@
                 <h2>What You Can Expect</h2>
             </div>
 
-            <div style="max-width: 900px; margin: 0 auto;">
-                <div class="feature-card scroll-reveal" style="text-align: left; margin-bottom: 2rem;">
-                    <h3>📸 Professional-Grade Equipment</h3>
-                    <p>We don't cut corners on equipment. Our DSLR camera system delivers photos that iPad booths simply can't match. The difference is visible in every print your guests take home.</p>
+            <div class="features-grid" style="max-width: 900px; margin: 0 auto;">
+                <div class="feature-card scroll-reveal">
+                    <div class="feature-icon">📸</div>
+                    <h3>Professional-Grade Equipment</h3>
+                    <p>We don't cut corners on equipment. Our DSLR camera system delivers photos that iPad booths simply can't match.</p>
                 </div>
 
-                <div class="feature-card scroll-reveal" style="text-align: left; margin-bottom: 2rem;">
-                    <h3>⏰ Punctual & Prepared</h3>
-                    <p>We arrive early to set up and test everything. You'll never worry about us being late or unprepared. Your event timeline is sacred to us.</p>
+                <div class="feature-card scroll-reveal">
+                    <div class="feature-icon">⏰</div>
+                    <h3>Punctual & Prepared</h3>
+                    <p>We arrive early to set up and test everything. You'll never worry about us being late or unprepared.</p>
                 </div>
 
-                <div class="feature-card scroll-reveal" style="text-align: left; margin-bottom: 2rem;">
-                    <h3>👔 Professional Appearance</h3>
-                    <p>We dress appropriately for your event and maintain a professional, courteous demeanor throughout. We blend in seamlessly while being available whenever needed.</p>
+                <div class="feature-card scroll-reveal">
+                    <div class="feature-icon">👔</div>
+                    <h3>Professional Appearance</h3>
+                    <p>We dress appropriately for your event and maintain a professional, courteous demeanor throughout.</p>
                 </div>
 
-                <div class="feature-card scroll-reveal" style="text-align: left; margin-bottom: 2rem;">
-                    <h3>💬 Clear Communication</h3>
-                    <p>From your first inquiry through delivery of your photo gallery, you'll always know what to expect. No surprises, no confusion, just clear, professional communication.</p>
+                <div class="feature-card scroll-reveal">
+                    <div class="feature-icon">💬</div>
+                    <h3>Clear Communication</h3>
+                    <p>From your first inquiry through delivery of your photo gallery, you'll always know what to expect.</p>
                 </div>
 
-                <div class="feature-card scroll-reveal" style="text-align: left;">
-                    <h3>✨ Memories That Last</h3>
-                    <p>At the end of the day, it's about the memories. We ensure your photos are high-quality, instantly shareable, and delivered promptly so you can relive your special day.</p>
+                <div class="feature-card scroll-reveal">
+                    <div class="feature-icon">✨</div>
+                    <h3>Memories That Last</h3>
+                    <p>We ensure your photos are high-quality, instantly shareable, and delivered promptly so you can relive your special day.</p>
                 </div>
             </div>
         </div>

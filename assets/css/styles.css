@@ -418,9 +418,8 @@ nav {
 }
 
 .package-features li {
-    padding: 1rem 0;
+    padding: 1.25rem 0;
     border-bottom: 1px solid var(--light-gray);
-    font-size: 1.1rem;
     display: flex;
     align-items: flex-start;
     gap: 1rem;
@@ -434,8 +433,48 @@ nav {
     content: '✓';
     color: var(--accent-red);
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     flex-shrink: 0;
+    line-height: 1.4;
+}
+
+.package-features .feature-content {
+    flex: 1;
+}
+
+.package-features .feature-title {
+    display: block;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--primary-blue);
+    margin-bottom: 0.35rem;
+}
+
+.package-features .feature-desc {
+    display: block;
+    font-size: 1rem;
+    color: var(--medium-gray);
+    line-height: 1.6;
+}
+
+.package-features .feature-subitems {
+    margin-top: 0.75rem;
+    padding-left: 0;
+    list-style: none;
+}
+
+.package-features .feature-subitems li {
+    padding: 0.35rem 0;
+    border-bottom: none;
+    font-size: 0.95rem;
+    color: var(--text-dark);
+}
+
+.package-features .feature-subitems li::before {
+    content: '•';
+    font-size: 1rem;
+    color: var(--accent-red);
 }
 
 .package-cta {
@@ -597,6 +636,44 @@ nav {
 .backdrop-content h3 {
     color: var(--primary-blue);
     margin-bottom: 1rem;
+}
+
+.backdrop-content h4 {
+    color: var(--primary-blue);
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+.backdrop-content .info-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.backdrop-content .info-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.backdrop-content .info-list li:last-child {
+    border-bottom: none;
+}
+
+.backdrop-content .bullet-list {
+    padding-left: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.backdrop-content .bullet-list li {
+    margin-bottom: 0.4rem;
+    color: var(--text-dark);
+}
+
+.backdrop-content .lead-text {
+    font-size: 1.15rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-dark);
 }
 
 .backdrop-badge {

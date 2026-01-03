@@ -1,0 +1,11 @@
+# Robots.txt for Rahaman Events Co.
+# https://rahamaneventsco.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://rahamaneventsco.com/sitemap.xml
+
+# Crawl-delay (optional, be polite to search engines)
+Crawl-delay: 1
