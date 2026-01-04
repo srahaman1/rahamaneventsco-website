@@ -3,10 +3,10 @@
 ## SEO Setup Tasks
 
 ### 1. Create Social Media Share Image
-- [ ] Create `og-image.jpg` (1200x630px recommended)
-- [ ] This image displays when your site is shared on Facebook, Instagram, Twitter, etc.
-- [ ] Use a professional photo of your photo booth setup or a branded graphic
-- [ ] Save to: `assets/images/og-image.jpg`
+- [x] Create `og-image.jpg` (1200x630px recommended)
+- [x] This image displays when your site is shared on Facebook, Instagram, Twitter, etc.
+- [x] Use a professional photo of your photo booth setup or a branded graphic
+- [x] Save to: `assets/images/og-image.jpg`
 
 ### 2. Create Favicon Files
 - [x] Go to [favicon.io](https://favicon.io) or [realfavicongenerator.net](https://realfavicongenerator.net)
@@ -17,16 +17,40 @@
   - [x] `apple-touch-icon.png` (180x180px)
 
 ### 3. Submit Sitemap to Google
-- [ ] Go to [Google Search Console](https://search.google.com/search-console)
-- [ ] Add your property (rahamaneventsco.com) if not already added
-- [ ] Navigate to Sitemaps in the left menu
-- [ ] Submit: `https://rahamaneventsco.com/sitemap.xml`
+- [x] Go to [Google Search Console](https://search.google.com/search-console)
+- [x] Add your property (rahamaneventsco.com) if not already added
+- [x] Navigate to Sitemaps in the left menu
+- [x] Submit: `https://rahamaneventsco.com/sitemap.xml`
 
 ### 4. Set Up Google Business Profile (Optional but Recommended)
 - [ ] Go to [Google Business Profile](https://business.google.com)
 - [ ] Claim or create your business listing
 - [ ] Add photos, services, and business hours
+- [ ] Take a single continous video of business card, street signs, and equipment
 - [ ] This helps you appear in "photo booth near me" searches
+
+### 5. Set Up Google Analytics
+- [x] **Create GA4 Property**
+  - [x] Go to [Google Analytics](https://analytics.google.com)
+  - [x] Sign in with your Google account
+  - [x] Click "Admin" (gear icon) → "Create Property"
+  - [x] Name it "Rahaman Events Co." and set timezone/currency
+- [x] **Set Up Data Stream**
+  - [x] Choose "Web" as the platform
+  - [x] Enter `https://rahamaneventsco.com` as website URL
+  - [x] Name the stream "Rahaman Events Website"
+  - [x] Copy the Measurement ID (starts with `G-`)
+- [x] **Add Tracking Code to Website**
+  - [x] Get the gtag.js snippet from Google Analytics
+  - [x] Add it to the `<head>` section of all HTML pages
+  - [x] Deploy changes to the live site
+- [] **Verify Installation**
+  - [x] Use Google Tag Assistant or Realtime reports to confirm tracking
+  - [x] Visit your site and check if data appears in GA4
+- [ ] **Configure Key Events (Conversions)**
+  - [ ] Set up event tracking for contact form submissions
+  - [ ] Track phone number clicks as events
+  - [ ] Track "Book Now" button clicks
 
 ---
 
@@ -53,10 +77,10 @@
 - [ ] Add review/testimonial schema when you collect Google reviews
 
 ### Medium-Term (Location Landing Pages)
-- [ ] Create `/photo-booth-rental-queens.html` - Target Queens specifically
-- [ ] Create `/photo-booth-rental-nassau-county.html` - Your unique territory
-- [ ] Create `/photo-booth-rental-suffolk-county.html` - Your unique territory
-- [ ] Create `/wedding-photo-booth-nyc.html` - High-value keyword
+- [x] Create `/photo-booth-rental-queens.html` - Target Queens specifically
+- [x] Create `/photo-booth-rental-nassau-county.html` - Your unique territory
+- [x] Create `/photo-booth-rental-suffolk-county.html` - Your unique territory
+- [x] Create `/wedding-photo-booth-nyc.html` - High-value keyword
 
 ### Long-Term Growth
 - [ ] Build Google reviews (aim for 50+ reviews)
