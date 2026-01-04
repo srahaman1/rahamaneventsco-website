@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nImprove visual polish and add comprehensive SEO\n\nVisual improvements:\n- Fix services page package features alignment with proper structure\n- Standardize about page commitment section cards\n- Clean up backdrops page list styling with CSS classes\n- Fix stray semicolons in gallery image tags\n\nSEO enhancements:\n- Add structured data \\(Schema.org\\) to all pages\n- Add Open Graph and Twitter Card meta tags\n- Add canonical URLs to all pages\n- Improve image alt text for accessibility and SEO\n- Create sitemap.xml and robots.txt\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "WebSearch"
+    ]
+  }
+}
