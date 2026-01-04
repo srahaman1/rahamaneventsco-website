@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // === FORM VALIDATION ===
+    // === FORM VALIDATION & GA4 TRACKING ===
     const contactForm = document.getElementById('contactForm');
 
     if (contactForm) {
@@ -130,8 +130,42 @@ document.addEventListener('DOMContentLoaded', function() {
                 alert('Please enter a valid 10-digit phone number');
                 return false;
             }
+
+            // GA4: Track form submission as lead generation
+            if (typeof gtag === 'function') {
+                gtag('event', 'generate_lead', {
+                    'event_category': 'Contact',
+                    'event_label': 'Contact Form Submission'
+                });
+            }
         });
     }
+
+    // === GA4: TRACK PHONE CLICKS ===
+    document.querySelectorAll('a[href^="tel:"]').forEach(function(link) {
+        link.addEventListener('click', function() {
+            if (typeof gtag === 'function') {
+                gtag('event', 'click', {
+                    'event_category': 'Contact',
+                    'event_label': 'Phone Call Click',
+                    'value': this.href.replace('tel:', '')
+                });
+            }
+        });
+    });
+
+    // === GA4: TRACK BOOK NOW BUTTON CLICKS ===
+    document.querySelectorAll('a.btn-primary').forEach(function(button) {
+        button.addEventListener('click', function() {
+            const buttonText = this.textContent.trim();
+            if (typeof gtag === 'function') {
+                gtag('event', 'click', {
+                    'event_category': 'CTA',
+                    'event_label': buttonText
+                });
+            }
+        });
+    });
     
     // === GALLERY LIGHTBOX (Simple Version) ===
     const galleryItems = document.querySelectorAll('.gallery-item img');
