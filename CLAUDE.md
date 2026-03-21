@@ -27,6 +27,7 @@ ssh root@104.131.119.134 "cd /var/www/html && git pull origin main"
 
 ### File Structure
 - `index.html`, `services.html`, `gallery.html`, `backdrops.html`, `about.html`, `contact.html` - Main pages
+- `photo-booth-rental-queens.html`, `photo-booth-rental-nassau-county.html`, `photo-booth-rental-suffolk-county.html`, `wedding-photo-booth-nyc.html` - Location/service-specific SEO landing pages
 - `assets/css/styles.css` - Single stylesheet with CSS variables for theming
 - `assets/js/scripts.js` - Vanilla JS for interactions (mobile menu, scroll effects, lightbox, form validation)
 - `assets/images/gallery/` - Event photos
@@ -58,6 +59,12 @@ Uses Formspree (https://formspree.io/f/xojqnklz) for form submissions. The form 
 
 ### Updating Prices
 Search and replace across `services.html` and `index.html` - prices appear in `.package-price` elements.
+
+### Adding SEO Landing Pages
+The location-specific pages (e.g., `photo-booth-rental-queens.html`) follow a consistent pattern: full `<head>` with canonical URL, Open Graph tags, geo meta tags, and `LocalBusiness` JSON-LD structured data. When adding a new location page, copy an existing one and update the location-specific text, canonical URL, and geo metadata.
+
+### Analytics & Conversion Tracking
+GA4 property `G-RNM5P14M3H` is loaded on every page. `scripts.js` fires `generate_lead` on contact form submit, `click` events on phone links and `.btn-primary` CTAs. Maintain these event names when modifying CTAs.
 
 ### Responsive Design
 Mobile-first with `@media` queries in styles.css. Test mobile menu toggle and responsive grids when making layout changes.
